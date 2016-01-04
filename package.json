@@ -13,7 +13,8 @@
     "min": "uglifyjs dist/pouchdb.authentication.js -mc > dist/pouchdb.authentication.min.js",
     "build": "npm run build-js && npm run min",
     "dev": "npm run jshint && browserify test/test.js > test/test-bundle.js && npm run dev-server",
-    "dev-server": "./bin/dev-server.js"
+    "dev-server": "./bin/dev-server.js",
+    "test": "npm run build && npm run jshint && browserify test/test.js > test/test-bundle.js && zuul -- test/test.js"
   },
   "keywords": [
     "pouch",
