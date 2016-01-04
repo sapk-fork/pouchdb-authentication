@@ -14,7 +14,7 @@
     "build": "npm run build-js && npm run min",
     "dev": "npm run jshint && browserify test/test.js > test/test-bundle.js && npm run dev-server",
     "dev-server": "./bin/dev-server.js",
-    "zuul" : "zuul -- test/test.js",
+    "zuul" : "npm run jshint && browserify test/test.js > test/test-bundle.js && zuul -- test/test-bundle.js",
     "test": "echo \"TODO\""
   },
   "keywords": [
