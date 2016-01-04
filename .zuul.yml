@@ -1,5 +1,5 @@
 name: quickstart
-ui: mocha-qunit
+ui: mocha-tdd
 browsers:
   - name: firefox
     platform: linux
