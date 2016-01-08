@@ -6,7 +6,6 @@ env:
  - TEST_DB="http://localhost:5984/testdb"
 before_script:
  - npm install -g mocha pouchdb-server
- - npm install 
 script: 
  - pouchdb-server -m & sleep 10s
  - mocha
